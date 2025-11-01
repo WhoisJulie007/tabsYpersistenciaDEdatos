@@ -8,12 +8,24 @@ struct ContentView: View {
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
+
             
             Text("Contador Screen")
                 .tabItem {
                     Image(systemName: "clock")
                     Text("Contador")
                 }
+            
+            
+            Text("Likes Screen")
+                .tabItem {
+                    Image(systemName: "heart")
+                    Text("Likes")
+                }
         }.accentColor(.red)
     }
+}
+
+#Preview {
+    ContentView()
 }
