@@ -3,25 +3,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
+
+        
         TabView {
-            Text("Welcome Screen")
-                .tabItem {
+            WelcomeView()
+                .tabItem{
                     Label("Home", systemImage: "house")
+                }
+            
+            CounterView()
+                .tabItem {
+                    Image(systemName: "clock")
+                    Text("este")
                 }
 
             
-            Text("Contador Screen")
-                .tabItem {
-                    Image(systemName: "clock")
-                    Text("Contador")
-                }
-            
-            
-            Text("Likes Screen")
-                .tabItem {
-                    Image(systemName: "heart")
-                    Text("Likes")
-                }
+
         }.accentColor(.red)
     }
 }
